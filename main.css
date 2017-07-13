@@ -1,0 +1,41 @@
+
+.center{
+  text-align: center;
+}
+
+li{
+	display: inline-block;
+}
+
+.rmargin{
+	margin-right: 50px;
+}
+
+.lmargin{
+	margin-left: 50px;
+}
+
+.tmargin{
+	margin-top: 50px;
+}
+
+.border{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.container{
+	width: 500px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th{
+	text-align: left;
+}
+
+button{
+	width: 80px;
+	height: 40px;
+}
