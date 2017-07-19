@@ -10,30 +10,41 @@
 </head>
 <body>
 
-<div class="center">
+<div class="center" id="begin">
 	<ul class="inline">
-		<li class="rmargin"><h2>Question 3 of 10</h1></li>
-		<li><h1>What is Homer's middle name?</h1></li>
-		<li class="lmargin"><h2>2 Correct 1 Wrong</h1></li>
+		<li class="rmargin"><h2>Question <span id="question-number">0</span> of 5</h1></li>
+		<li><h1 id="question">Welcome to The Simpsons Trivia Game!</h1></li>
+		<li class="lmargin"><h2><span id="correct">0</span> Correct <span id="incorrect">0</span> Incorrect</h1></li>
 	</ul>
-	<form class="tmargin">
-		<table class="container border">
+	<form class="tmargin" id="myform">
+		<div class="container hide"></div>
+		<table class="container border hidden">
 			<tr class="button">
-				<th class="border"><input type="radio" name="middle" value="jay">Jay</th>
-				<th class="border"><input type="radio" name="middle" value="ray">Ray</th>
+				<th class="border" id="box-1"><input id="radio-a" type="radio" name="simpsons" value="" checked="checked"><span id="answer-a"></span></th>
+				<th class="border" id="box-2"><input id="radio-b" type="radio" name="simpsons" value=""><span id="answer-b"></span></th>
 			</tr>
 			<tr class="button">
-				<th class="border"><input type="radio" name="middle" value="gay">Gay</th>
-				<th class="border"><input type="radio" name="middle" value="may">May</th>
+				<th class="border" id="box-3"><input id="radio-c" type="radio" name="simpsons" value=""><span id="answer-c"></span></th>
+				<th class="border" id="box-4"><input id="radio-d" type="radio" name="simpsons" value=""><span id="answer-d"></span></th>
 			</tr>
 		</table>
-		<button class="tmargin answer">Answer</button>
-		<div class="submit-buttons tmargin">
-			<button type="submit" class="rmargin retry">Retry</button>
-			<button type="submit" class="lmargin continue">Continue</button>
+		<button class="tmargin hide" id="start">Start!</button>
+		<button class="tmargin hidden" id="answer">Answer</button>
+		<div class="tmargin">
+			<button type="submit" class="rmargin hidden" id="retry">Retry</button>
+			<button type="submit" class="lmargin hidden" id="continue">Continue</button>
 		</div>
 	</form>
 </div>
+
+<div class="final center">
+	<h1>The End</h1>
+	<h2 class="tmargin">You got</h2>
+	<h2><span id="correct-answers"></span> Correct</h2>
+	<h2><span id="incorrect-answers"></span> Incorrect</h2>
+	<h2><span id="percent"></span></h2>
+	<form><button type="submit" class="tmargin" id="retry2">Retry</button></form>
+</div> 
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="app.js"></script>

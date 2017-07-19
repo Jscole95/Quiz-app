@@ -33,9 +33,19 @@ li{
 
 th{
 	text-align: left;
+	width: 50%;
+	height: 50%;
 }
 
 button{
 	width: 80px;
 	height: 40px;
+}
+
+.hidden, .final{
+	display: none;
+}
+
+.green{
+	background-color: #63f50b;
 }
